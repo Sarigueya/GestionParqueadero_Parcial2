@@ -1,0 +1,120 @@
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:#fafafa;
+    min-height:100vh;
+    color:#1e293b;
+}
+
+/* ── Header minimalista ── */
+.header{
+    background:#fff;border-bottom:1px solid #f1f5f9;
+    padding:0 2rem;
+    display:flex;align-items:center;height:56px;gap:1rem;
+}
+.hdr-marca{display:flex;align-items:center;gap:8px;margin-right:auto}
+.hdr-marca-ico{
+    width:30px;height:30px;
+    background:#7c3aed;border-radius:7px;
+    display:flex;align-items:center;justify-content:center;
+}
+.hdr-marca-ico i{font-size:14px;color:#fff}
+.hdr-marca-txt{font-size:14px;font-weight:600;color:#1e293b}
+
+.badge-rol{
+    background:#f5f3ff;border:1px solid #ddd6fe;
+    border-radius:100px;padding:3px 11px;
+    font-size:12px;color:#7c3aed;font-weight:500;
+}
+.btn-salir{
+    display:flex;align-items:center;gap:6px;
+    background:#fafafa;border:1px solid #f1f5f9;
+    border-radius:8px;padding:6px 11px;
+    font-size:13px;color:#94a3b8;text-decoration:none;
+    transition:color .15s;margin-left:.5rem;
+}
+.btn-salir:hover{color:#1e293b}
+
+/* ── Contenido ── */
+.wrap{max-width:1000px;margin:0 auto;padding:2rem}
+
+.page-head{
+    display:flex;align-items:flex-end;justify-content:space-between;
+    margin-bottom:1.5rem;
+}
+.page-titulo{font-size:20px;font-weight:600;color:#1e293b}
+.page-sub{font-size:13px;color:#94a3b8;margin-top:.2rem}
+.total-pill{
+    background:#f5f3ff;border:1px solid #ddd6fe;
+    border-radius:100px;padding:5px 14px;
+    font-size:13px;color:#7c3aed;font-weight:500;
+}
+
+/* Aviso de solo lectura */
+.aviso-readonly{
+    background:#f5f3ff;border:1px solid #ddd6fe;
+    border-radius:10px;padding:.7rem 1rem;
+    font-size:13px;color:#7c3aed;
+    display:flex;align-items:center;gap:.5rem;
+    margin-bottom:1.2rem;
+}
+.aviso-readonly i{font-size:14px;flex-shrink:0}
+
+/* Barra de búsqueda decorativa */
+.busqueda{
+    background:#fff;border:1px solid #f1f5f9;
+    border-radius:10px;padding:.7rem 1rem;
+    display:flex;align-items:center;gap:.6rem;
+    margin-bottom:1.2rem;color:#cbd5e1;
+}
+.busqueda i{font-size:14px}
+.busqueda span{font-size:13px;color:#cbd5e1}
+
+/* ── Tabla ── */
+.tabla-wrap{
+    background:#fff;border:1px solid #f1f5f9;
+    border-radius:14px;overflow:hidden;
+}
+table{width:100%;border-collapse:collapse}
+thead tr{border-bottom:1px solid #f1f5f9}
+thead th{
+    padding:.8rem 1.25rem;
+    font-size:11.5px;font-weight:500;color:#94a3b8;
+    text-transform:uppercase;letter-spacing:.6px;
+    text-align:left;
+}
+tbody tr{border-bottom:1px solid #fafafa;transition:background .1s}
+tbody tr:last-child{border-bottom:none}
+tbody tr:hover{background:#fafaff}
+td{padding:.9rem 1.25rem;font-size:13.5px;color:#334155;vertical-align:middle}
+
+/* Badges y etiquetas */
+.placa{font-weight:600;color:#1e293b;letter-spacing:.5px;font-size:14px}
+.hora{font-size:13px;color:#64748b;display:flex;align-items:center;gap:5px}
+.hora i{font-size:11px}
+
+.badge-activo{
+    background:#f0fdf4;border:1px solid #bbf7d0;
+    border-radius:100px;padding:3px 10px;
+    font-size:12px;color:#15803d;font-weight:500;
+    display:inline-block;
+}
+.badge-salida{
+    background:#fef2f2;border:1px solid #fecaca;
+    border-radius:100px;padding:3px 10px;
+    font-size:12px;color:#dc2626;font-weight:500;
+    display:inline-block;
+}
+.tag-cat{
+    background:#f5f3ff;border:1px solid #ddd6fe;
+    border-radius:100px;padding:3px 10px;
+    font-size:12px;color:#7c3aed;font-weight:500;
+    display:inline-block;
+}
+.espacio{font-size:13px;color:#64748b}
+
+/* Estado vacío */
+.vacio{padding:5rem 2rem;text-align:center;color:#cbd5e1}
+.vacio i{font-size:2rem;display:block;margin-bottom:.7rem}
+.vacio p{font-size:14px}

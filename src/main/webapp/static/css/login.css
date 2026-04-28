@@ -1,0 +1,113 @@
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+body{
+    font-family:'Inter',sans-serif;
+    min-height:100vh;
+    display:grid;
+    grid-template-columns:1fr 460px;
+    background:#0c0e11;
+}
+
+/* ── Panel izquierdo: branding ── */
+.izq{
+    background:#0c0e11;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    padding:5rem 5rem 5rem 6rem;
+    position:relative;
+    overflow:hidden;
+}
+.izq::before{
+    content:'';
+    position:absolute;
+    top:-180px; left:-180px;
+    width:560px; height:560px;
+    border-radius:50%;
+    background:radial-gradient(circle,rgba(74,222,128,.07)0%,transparent 68%);
+}
+.marca{display:flex;align-items:center;gap:10px;margin-bottom:4rem}
+.marca-icono{
+    width:36px; height:36px;
+    background:#4ade80;
+    border-radius:9px;
+    display:flex; align-items:center; justify-content:center;
+}
+.marca-icono i{font-size:17px;color:#0c0e11}
+.marca-nombre{font-size:17px;font-weight:600;color:#fff;letter-spacing:-.3px}
+
+.titulo{font-size:2.8rem;font-weight:600;color:#fff;line-height:1.18;letter-spacing:-1.2px;margin-bottom:1.4rem}
+.titulo em{color:#4ade80;font-style:normal}
+.subtitulo{font-size:15px;color:#6b7280;line-height:1.75;max-width:350px;margin-bottom:3rem}
+
+.chips{display:flex;flex-direction:column;gap:10px}
+.chip{display:flex;align-items:center;gap:10px;font-size:13.5px;color:#9ca3af}
+.chip-dot{width:6px;height:6px;border-radius:50%;background:#4ade80;flex-shrink:0}
+
+/* ── Panel derecho: formulario ── */
+.der{
+    background:#13161b;
+    border-left:1px solid #1c2028;
+    display:flex; align-items:center; justify-content:center;
+    padding:3rem;
+}
+.caja{width:100%;max-width:360px}
+.caja-titulo{font-size:21px;font-weight:600;color:#f9fafb;margin-bottom:.35rem}
+.caja-sub{font-size:14px;color:#6b7280;margin-bottom:2.2rem}
+
+/* Campos del formulario */
+.campo{margin-bottom:1.1rem}
+.campo label{
+    display:block;
+    font-size:11.5px;font-weight:500;color:#6b7280;
+    text-transform:uppercase;letter-spacing:.7px;
+    margin-bottom:.45rem;
+}
+.wrap-input{position:relative}
+.wrap-input i{
+    position:absolute;left:13px;top:50%;transform:translateY(-50%);
+    font-size:14px;color:#374151;pointer-events:none;
+}
+.wrap-input input{
+    width:100%;
+    background:#0c0e11;
+    border:1px solid #1c2028;
+    border-radius:9px;
+    padding:11px 13px 11px 38px;
+    font-size:14px;color:#f3f4f6;
+    font-family:'Inter',sans-serif;
+    outline:none;
+    transition:border-color .18s;
+}
+.wrap-input input::placeholder{color:#374151}
+.wrap-input input:focus{border-color:#4ade80}
+
+/* Alerta de error */
+.error-caja{
+    background:#1c1010;
+    border:1px solid #450a0a;
+    border-radius:9px;
+    padding:10px 13px;
+    font-size:13px;color:#fca5a5;
+    display:flex;align-items:center;gap:8px;
+    margin-bottom:1.1rem;
+}
+.error-caja i{font-size:14px;flex-shrink:0}
+
+/* Botón de envío */
+.btn-enter{
+    width:100%;
+    background:#4ade80;
+    border:none;
+    border-radius:9px;
+    padding:12px;
+    font-size:14px;font-weight:600;color:#0c0e11;
+    font-family:'Inter',sans-serif;
+    cursor:pointer;margin-top:.35rem;
+    display:flex;align-items:center;justify-content:center;gap:7px;
+    transition:opacity .18s,transform .1s;
+}
+.btn-enter:hover{opacity:.85}
+.btn-enter:active{transform:scale(.98)}
+
+.pie{text-align:center;margin-top:2.2rem;font-size:12px;color:#374151}

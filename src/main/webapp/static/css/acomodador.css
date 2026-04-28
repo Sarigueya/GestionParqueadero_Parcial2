@@ -1,0 +1,167 @@
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:#f1f5f9;
+    min-height:100vh;
+    color:#1e293b;
+}
+
+/* ── Header ── */
+.header{
+    background:#fff;border-bottom:1px solid #e2e8f0;
+    padding:0 2rem;
+    display:flex;align-items:center;height:60px;gap:1rem;
+}
+.hdr-marca{display:flex;align-items:center;gap:9px;margin-right:auto}
+.hdr-marca-ico{
+    width:32px;height:32px;
+    background:#2563eb;border-radius:8px;
+    display:flex;align-items:center;justify-content:center;
+}
+.hdr-marca-ico i{font-size:15px;color:#fff}
+.hdr-marca-txt{font-size:15px;font-weight:600;color:#1e293b}
+.hdr-sep{width:1px;height:20px;background:#e2e8f0}
+.hdr-titulo{font-size:14px;color:#64748b}
+
+.badge-rol{
+    background:#eff6ff;border:1px solid #bfdbfe;
+    border-radius:100px;padding:4px 12px;
+    font-size:12px;color:#2563eb;font-weight:500;
+}
+.btn-hdr-salir{
+    display:flex;align-items:center;gap:6px;
+    background:#f8fafc;border:1px solid #e2e8f0;
+    border-radius:8px;padding:6px 12px;
+    font-size:13px;color:#64748b;text-decoration:none;
+    transition:background .15s,color .15s;margin-left:.5rem;
+}
+.btn-hdr-salir:hover{background:#f1f5f9;color:#1e293b}
+
+/* ── Contenido ── */
+.contenido{padding:2rem}
+
+.page-head{margin-bottom:1.5rem}
+.page-titulo{font-size:20px;font-weight:600;color:#1e293b}
+.page-sub{font-size:14px;color:#64748b;margin-top:.2rem}
+
+/* ── Cuadrícula de tarjetas ── */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(280px,1fr));
+    gap:1rem;
+}
+
+.v-card{
+    background:#fff;border:1px solid #e2e8f0;
+    border-radius:14px;overflow:hidden;
+    transition:box-shadow .15s,transform .15s;
+}
+.v-card:hover{box-shadow:0 4px 24px rgba(0,0,0,.08);transform:translateY(-1px)}
+
+.v-card-top{padding:1.1rem 1.3rem;border-bottom:1px solid #f1f5f9}
+.v-placa{font-size:16px;font-weight:600;color:#1e293b;letter-spacing:.8px;margin-bottom:.4rem}
+.v-cat{
+    background:#eff6ff;border:1px solid #bfdbfe;
+    border-radius:100px;padding:2px 10px;
+    font-size:11.5px;color:#2563eb;font-weight:500;
+    display:inline-block;
+}
+
+.v-card-body{padding:1rem 1.3rem}
+.v-fila{
+    display:flex;align-items:center;gap:.5rem;
+    font-size:13px;color:#64748b;
+    margin-bottom:.4rem;
+}
+.v-fila i{font-size:13px;width:16px;color:#94a3b8;flex-shrink:0}
+.v-fila:last-child{margin-bottom:0}
+.v-fila strong{color:#334155;font-weight:500}
+
+.v-card-footer{padding:.9rem 1.3rem;border-top:1px solid #f1f5f9;background:#f8fafc}
+.btn-espacio{
+    width:100%;
+    background:#2563eb;border:none;border-radius:8px;
+    padding:8px;font-size:13px;font-weight:600;color:#fff;
+    font-family:'Inter',sans-serif;cursor:pointer;text-decoration:none;
+    display:flex;align-items:center;justify-content:center;gap:7px;
+    transition:background .15s;
+}
+.btn-espacio:hover{background:#1d4ed8}
+
+/* ── Formulario de actualización de espacio ── */
+.main-form{
+    flex:1;
+    display:flex;align-items:center;justify-content:center;
+    padding:2rem;
+}
+.caja-form{width:100%;max-width:460px}
+
+.vehiculo-info{
+    background:#fff;border:1px solid #e2e8f0;
+    border-radius:14px;padding:1.4rem;
+    margin-bottom:1rem;
+    display:flex;align-items:center;gap:1rem;
+}
+.vi-placa-box{
+    background:#f8fafc;border:1px solid #e2e8f0;
+    border-radius:10px;padding:.7rem 1rem;
+    text-align:center;flex-shrink:0;
+}
+.vi-placa{font-size:20px;font-weight:600;color:#1e293b;letter-spacing:1px}
+.vi-tipo{font-size:11px;color:#94a3b8;text-transform:uppercase;letter-spacing:.5px;margin-top:2px}
+.vi-fila{font-size:13px;color:#64748b;margin-bottom:.25rem;display:flex;gap:6px;align-items:center}
+.vi-fila i{font-size:12px;color:#94a3b8;width:14px}
+
+.form-caja{
+    background:#fff;border:1px solid #e2e8f0;
+    border-radius:14px;padding:1.5rem;
+}
+.form-titulo{font-size:16px;font-weight:600;color:#1e293b;margin-bottom:.3rem}
+.form-sub{font-size:13px;color:#94a3b8;margin-bottom:1.5rem}
+
+.campo{margin-bottom:1.2rem}
+.campo label{
+    display:block;
+    font-size:11.5px;font-weight:500;color:#64748b;
+    text-transform:uppercase;letter-spacing:.6px;
+    margin-bottom:.45rem;
+}
+.campo input{
+    width:100%;
+    background:#f8fafc;border:1px solid #e2e8f0;
+    border-radius:9px;padding:11px 13px;
+    font-size:15px;font-weight:500;color:#1e293b;
+    font-family:'Inter',sans-serif;
+    outline:none;transition:border-color .18s;
+}
+.campo input:focus{border-color:#2563eb;background:#fff}
+.campo .hint{font-size:12px;color:#94a3b8;margin-top:.35rem}
+
+.divisor{height:1px;background:#f1f5f9;margin:1.2rem 0}
+.acciones{display:flex;gap:.75rem}
+.btn-actualizar{
+    flex:1;background:#2563eb;border:none;border-radius:9px;
+    padding:11px;font-size:14px;font-weight:600;color:#fff;
+    font-family:'Inter',sans-serif;cursor:pointer;
+    display:flex;align-items:center;justify-content:center;gap:7px;
+    transition:background .15s;
+}
+.btn-actualizar:hover{background:#1d4ed8}
+.btn-cancelar{
+    flex:1;background:#f8fafc;border:1px solid #e2e8f0;
+    border-radius:9px;padding:11px;font-size:14px;color:#64748b;
+    font-family:'Inter',sans-serif;text-decoration:none;
+    display:flex;align-items:center;justify-content:center;gap:7px;
+    transition:background .15s,color .15s;
+}
+.btn-cancelar:hover{background:#f1f5f9;color:#1e293b}
+
+/* Estado vacío */
+.vacio{
+    grid-column:1/-1;text-align:center;
+    padding:5rem 2rem;color:#94a3b8;
+    background:#fff;border:1px solid #e2e8f0;border-radius:14px;
+}
+.vacio i{font-size:2.5rem;display:block;margin-bottom:1rem;color:#cbd5e1}
+.vacio p{font-size:14px}
